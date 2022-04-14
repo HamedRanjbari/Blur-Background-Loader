@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background: #000;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.bg{
+    position: absolute;
+    background: url(img/6.\ sixth.jpg) no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: blur(70px);
+    transition: filter 3s ease;
+    z-index: -1;
+}
+@media screen and (max-width: 1025px) {
+    .bg {
+        height: calc(100vh + 200px);
+        width: calc(100vw + 560px);
+    }
+}
+.text{
+    position: absolute;
+    color: lavender;
+    font-size: 4rem;
+}
